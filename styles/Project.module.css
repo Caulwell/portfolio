@@ -1,0 +1,53 @@
+
+.projectWrap{
+    width: 100%;
+    padding: 1rem;
+    position: relative;
+    background: linear-gradient(to right, #8476d0, #675ab5, #5648a9);
+    border-radius: 0.25rem;
+    padding: 3px;
+    margin-bottom: 1rem;
+    transition: all .2s ease-in-out;
+}
+.projectWrap:hover{
+    transform: scale(1.1);
+}
+.project{
+    width: 100%;
+    color: white;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease, border-color 0.15s ease;
+    display: flex;
+    flex-direction: column;
+    padding:1rem;
+    cursor: pointer;
+}
+.projectTop{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projectTop h5{
+    margin: 0;
+    font-size: 1.2rem;
+    margin-right: 3rem;
+}
+
+.projectBottom{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.technologies{
+    display: flex;
+}
+
+.projectTop p{
+    margin: 0;
+    margin-right: 0.5rem;
+    padding: 0.3rem;
+    border-radius: 0.25rem;
+}

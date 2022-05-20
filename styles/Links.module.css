@@ -1,0 +1,29 @@
+
+.linksContainer{
+    display: flex;
+    height: 4rem;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.linksContainer span{
+    font-size: 1.3rem;
+    opacity: 0.8;
+}
+
+.linksContainer a{
+    height: 2.5rem;
+    margin-left: 0.5rem;
+    padding: 0 1rem;
+    background: linear-gradient(to right, #8476d0, #675ab5, #5648a9);
+    color: white;
+    font-weight: bold;
+    border-radius: 0.25rem;
+    display: flex;
+    align-items: center;
+}
+
+.buttons{
+    display: flex;
+}

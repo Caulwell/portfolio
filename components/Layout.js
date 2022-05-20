@@ -5,15 +5,15 @@ import styles from "../styles/Layout.module.css";
 
 const Layout = ({children}) => {
     return (
-        <>
-            <Nav/>
+
+            
             <div className={styles.container}>
+            <Nav/>
             
             <main className={styles.main}>
                 {children}
             </main>
         </div>
-        </>
       
     )
 }
