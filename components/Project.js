@@ -1,24 +1,26 @@
 import styles from "../styles/Project.module.css";
+import Link from "next/link";
 
-const Project = ({name, desc, technologies}) => {
+const Project = ({name, desc, technologies, links}) => {
 
 
     return (
-        <a className={styles.projectWrap}>
         <div className={styles.project}>
-        <div className={styles.projectTop}>
+        <div className={styles.projectTitle}>
                 <h5>{name}</h5>
-                <div className={styles.technologies}>
-                {technologies.map(tech => <p>{tech}</p>)}
-                </div>
             </div>
-            <div className={styles.projectBottom}>
-                <span>{desc}</span>
+            <div className={styles.projectDesc}>
+            <p>{desc}</p>
+            </div>
+            <div className={styles.projectSkills}>
+                {technologies.map(tech => <p>{tech}</p>)}
+            </div>
+            <div className={styles.projectLinks}>
+                {links && links.map(link => <a href={link.link}>{link.name}</a>)}
                  
             </div>
         </div>
             
-        </a>
     )
 
 }

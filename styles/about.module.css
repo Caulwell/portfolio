@@ -1,0 +1,30 @@
+
+
+.education{
+    
+}
+
+.educationTitle{
+    font-size: 1.8rem;
+    font-weight:normal;
+    margin: 1rem 0;
+}
+
+.educationItem{
+    color: #5648a9;
+    margin: 0;
+}
+
+.educationDetails{
+    margin-bottom: 2rem;
+}
+
+.educationDetails p{
+    margin: 0.2rem;
+}
+
+.educationDetails p a{
+    text-decoration:underline;
+    color: #5648a9; 
+    font-weight: bold;
+}

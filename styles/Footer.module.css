@@ -1,0 +1,11 @@
+.footer{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.footer a{
+    margin-right: 2rem;
+    font-weight: bold;
+    color: #5648a9;
+}

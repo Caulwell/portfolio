@@ -1,5 +1,6 @@
 import Nav from "./Nav";
 import styles from "../styles/Layout.module.css";
+import Footer from "./Footer";
 
 
 

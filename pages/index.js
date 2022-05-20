@@ -1,7 +1,7 @@
 import Head from 'next/head';
-import Featured from '../components/Featured';
+import Projects from '../components/Projects';
 import Header from '../components/Header';
-import Links from '../components/Links';
+
 export default function Home() {
   return (
     <>
@@ -18,10 +18,9 @@ export default function Home() {
       para="Experienced creating complex web applications with a variety of technologies"
       />
 
-      <Links/>
       <hr style={{width: "100%", marginTop: "1rem", opacity: "0.5"}}/>
      
-      <Featured/>
+      <Projects/>
     </>
   )
 }
