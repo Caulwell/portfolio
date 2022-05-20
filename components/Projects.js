@@ -28,7 +28,7 @@ const Projects = () => {
             desc: `This application was created in order to further understand .NET ecosystem, as well as further my knowledge in authentication,
             eccomerce, and the MVC design pattern. Hosted on Azure, this application defines roles, allows for authentication using a local and Google Oauth strategy.
             Orders can be placed and payments made using Stripe API.`,
-            technologies: ["C#", ".NET MVC", "Entity Framework", "Bootstrap", "JQuery"],
+            technologies: ["C#", ".NET MVC", "Razor", "Entity Framework", "Bootstrap", "JQuery"],
             links: [{name: "Live Demo", link: "https://github.com/Caulwell/BulkyBook"}, {name: "Github", link: "https://bulky164.azurewebsites.net/"}]
         },
 
