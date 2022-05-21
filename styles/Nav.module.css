@@ -6,6 +6,10 @@
     width: 100%;
     color: #5648a9;
     font-weight: bold;
+    z-index: 99;
+    position: fixed;
+    background-color: rgb(249 250 251);
+    padding: 2rem 18rem;
 }
 
 .nav ul{
