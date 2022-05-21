@@ -1,50 +1,73 @@
-import styles from "../styles.Skills.module.css";
+import styles from "../styles/Skills.module.css";
+import Skill from "./Skill";
 
 
 const Skills = () => {
 
-    const skills = [
-
+    const backEnd = [
         {
-            name: "React.JS",
-            logo: ""
-        },
-        {
-            name: "C#",
-            logo: ""
+            name: "NodeJS",
+            logo: "devicon-nodejs-plain"
         },
         {
             name: ".NET",
-            logo: ""
+            logo: "devicon-dotnetcore-plain"
         },
         {
-            name: "SQL",
-            logo: ""
+            name: ".NET",
+            logo:"devicon-dotnetcore-plain"
         },
         {
-            name: "Node.JS",
-            logo: ""
+            name: "SQL Server",
+            logo: "devicon-microsoftsqlserver-plain"
         },
         {
-            name: "Java",
-            logo: ""
+            name: "PostgreSQL",
+            logo: "devicon-postgresql-plain"
+        },
+        {
+            name: "MongoDB",
+            logo: "devicon-mongodb-plain"
+        }
+    ];
+
+    const frontEnd = [
+        {
+            name: "ReactJS",
+            logo: "devicon-react-original"
+        },
+        {
+            name: "JQuery",
+            logo: "devicon-jquery-plain"
+        },
+        {
+            name: "Bootstrap",
+            logo: "devicon-bootstrap-plain"
+        },
+        {
+            name: "Material UI",
+            logo: "devicon-materialui-plain"
         },
     ];
 
     return (
 
         <div className={styles.skills}>
-            <h3>Skills</h3>
-            <div className={styles.skillsList}>
-                {skills.map(skill => {
-                    return (
-
-                    )
-                })}
-            </div>
-
+                <div className={styles.listSection}>
+                Frontend:
+                    {frontEnd.map(skill => 
+                        <div className={styles.skill}> 
+                        <Skill name={skill.name} logo={skill.logo}/>
+                        </div>
+                    )}
+                </div>
+                <div className={styles.listSection}>
+                Backnd:
+                    {backEnd.map(skill => 
+                            <Skill name={skill.name} logo={skill.logo}/>
+                    )}
+                </div>
         </div>
     )
 }
-
 export default Skills;

@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "../styles/Link.module.css";
 
 
-const Link = ({href, icon, name}) => {
+const Link = ({href, name, icon}) => {
 
 
     return (

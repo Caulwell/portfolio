@@ -1,6 +1,5 @@
-import styles from "../styles/Project.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "./Link";
+import styles from "../styles/Project.module.css";
 
 const Project = ({name, desc, technologies, links}) => {
 
@@ -17,7 +16,7 @@ const Project = ({name, desc, technologies, links}) => {
                 {technologies.map(tech => <p>{tech}</p>)}
             </div>
             <div className={styles.projectLinks}>
-                {links && links.map(link => <Link href={link.link} icon={link.icon} name={link.name}/>)}
+                {links && links.map(link =><Link href={link.href} name={link.name} icon={link.icon}/>)}
             </div>
         </div>
             

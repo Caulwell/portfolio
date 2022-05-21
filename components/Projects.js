@@ -31,10 +31,9 @@ const Projects = () => {
             eccomerce, and the MVC design pattern. Hosted on Azure, this application defines roles, allows for authentication using a local and Google Oauth strategy.
             Orders can be placed and payments made using Stripe API.`,
             technologies: ["C#", ".NET MVC", "Razor", "Entity Framework", "Bootstrap", "JQuery"],
-            links: [{name: "Live Demo", link: "https://github.com/Caulwell/BulkyBook", icon: faUpRightFromSquare}, {name: "Github", link: "https://bulky164.azurewebsites.net/", icon: faGithub}]
+            links: [{name: "Live Demo", link: "https://bulky164.azurewebsites.net/", icon: faUpRightFromSquare}, {name: "Github", link: "https://github.com/Caulwell/BulkyBook", icon: faGithub}]
         },
-
-    ]
+    ];
 
     return (
 
@@ -43,12 +42,13 @@ const Projects = () => {
                 Projects
             </h3>
             <div className={styles.projects}>
-                {projects.map(project => {
+                {projects.map((project, index) => {
                     return <Project
                         name={project.name}
                         desc={project.desc}
                         technologies={project.technologies}
                         links={project.links}
+                        key={"project"+index}
                     />
                 })}
             </div>

@@ -19,3 +19,9 @@
 .nav ul li a{
     margin-right: 1.5rem;
 }
+
+.nav svg{
+    cursor: pointer;
+    width: 1.5rem;
+    height: 1.5rem;
+}
