@@ -1,5 +1,8 @@
 
 import styles from "../styles/Header.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
+import Link from "./Link";
 
 const Header = ({title, description, para}) => {
 
@@ -8,8 +11,8 @@ const Header = ({title, description, para}) => {
         <div className={styles.titleContainer}>
         <h1 className={styles.title}>{title}</h1>
         <div className={styles.linksContainer}>
-            <a href="https://github.com/Caulwell">Github</a>
-            <a href="https://www.linkedin.com/in/danny-caulwell/">LinkedIn</a>
+        <Link href="https://github.com/Caulwell" icon={faGithub} name="Github"/>
+        <Link href="https://www.linkedin.com/in/danny-caulwell/" icon={faLinkedin} name="LinkedIn"/>
         </div>
         </div>
             

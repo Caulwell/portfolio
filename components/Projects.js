@@ -1,5 +1,7 @@
 import styles from "../styles/Projects.module.css";
 import Project from "./Project";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
 
 const Projects = () => {
@@ -13,7 +15,7 @@ const Projects = () => {
                  perform standard BST operations, convert between each type and gather information on the tree and operations.
             `,
             technologies: ["ReactJS", "Javascript", "ES6", "HTML5", "CSS3", "MUI"],
-            links: [{name: "Live Demo", link: "https://treevis.netlify.app"}, {name: "Github", link: "https://github.com/Caulwell/BSTVisualisation"}]
+            links: [{name: "Live Demo", link: "https://treevis.netlify.app", icon:faUpRightFromSquare }, {name: "Github", link: "https://github.com/Caulwell/BSTVisualisation", icon: faGithub}]
         },
         {
             name: "Spotify-Translations",
@@ -21,7 +23,7 @@ const Projects = () => {
             Allows users to search and play any song, browse their playlists and gain translated lyrics for this song. Users can also gain 
             definitions for any word with web-scraping utilised to gain the data.`,
             technologies: ["ReactJS", "NodeJS", "ExpressJS", "Cheerio"],
-            links: [{name: "Github", link: "https://github.com/Caulwell/SpotifyTranslations"}],
+            links: [{name: "Github", link: "https://github.com/Caulwell/SpotifyTranslations", icon: faGithub}],
         },
         {
             name: "BulkyBook",
@@ -29,7 +31,7 @@ const Projects = () => {
             eccomerce, and the MVC design pattern. Hosted on Azure, this application defines roles, allows for authentication using a local and Google Oauth strategy.
             Orders can be placed and payments made using Stripe API.`,
             technologies: ["C#", ".NET MVC", "Razor", "Entity Framework", "Bootstrap", "JQuery"],
-            links: [{name: "Live Demo", link: "https://github.com/Caulwell/BulkyBook"}, {name: "Github", link: "https://bulky164.azurewebsites.net/"}]
+            links: [{name: "Live Demo", link: "https://github.com/Caulwell/BulkyBook", icon: faUpRightFromSquare}, {name: "Github", link: "https://bulky164.azurewebsites.net/", icon: faGithub}]
         },
 
     ]
